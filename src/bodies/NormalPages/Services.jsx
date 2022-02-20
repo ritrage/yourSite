@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     alignContent:'space-evenly',
     verticalAlign: 'center',
-    backgroundColor: '#202124',
+    backgroundColor: 'black',
     color: 'white'
 }));
 
@@ -22,6 +22,13 @@ export default function Services() {
   return (
     <Box className="Services">
         <Grid container spacing={1} alignContent={'center'}>
+            <Grid item xs={12} sm={12} md={12} lg={12} className="Title">
+                <Item>
+                    <Typography variant='h3'>
+                        Why Us?
+                    </Typography>
+                </Item>
+            </Grid>
             <Grid item xs={12} md={4} lg={4} className="Grid">
                 <Card sx={{ maxWidth: 345 }} className="Card">
                     <CardActionArea className="Card">

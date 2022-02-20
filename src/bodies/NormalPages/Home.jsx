@@ -8,7 +8,7 @@ import { Typography } from '@mui/material';
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
-  alignContent:'space-evenly',
+  alignContent:'center',
   verticalAlign: 'center',
   height: '85vh',
   maxHeight: '85vh',
@@ -49,7 +49,12 @@ export default function Home() {
             <Typography variant='h5'>
               with
             </Typography>
-            <Typography variant='h1' className="YourSite" fontFamily={'sans-serif'}>
+            <Typography variant='h1' className="YourSite" fontFamily={'sans-serif'}
+            sx={{ display: { xs: 'none', sm: 'none', md: 'contents', lg: 'contents' }}}>
+              YourSite
+            </Typography>
+            <Typography variant='h2' className="YourSite" fontFamily={'sans-serif'}
+            sx={{ display: { xs: 'contents', sm: 'contents', md: 'none', lg: 'none' }}}>
               YourSite
             </Typography>
           </Item>
